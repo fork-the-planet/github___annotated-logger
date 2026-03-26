@@ -19,7 +19,7 @@ pychoir==0.0.29
     # via hatch.envs.default
 python-json-logger==4.0.0
     # via hatch.envs.default
-requests==2.32.5
+requests==2.33.0
     # via hatch.envs.default
 urllib3==2.6.3
     # via requests

@@ -63,7 +63,7 @@ pygments==2.19.2
     # via pytest
 pyright==1.1.408
     # via hatch.envs.dev
-pytest==9.0.2
+pytest==9.0.3
     # via
     #   hatch.envs.dev
     #   pytest-cov

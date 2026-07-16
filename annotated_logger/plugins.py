@@ -24,7 +24,7 @@ class BasePlugin:
     def uncaught_exception(
         self, exception: Exception, logger: AnnotatedAdapter
     ) -> AnnotatedAdapter:
-        """Handle an uncaught excaption."""
+        """Handle an uncaught exception."""
         if "success" not in logger.filter.annotations:
             logger.annotate(success=False)
         if "exception_title" not in logger.filter.annotations:
@@ -68,7 +68,7 @@ class RenamerPlugin(BasePlugin):
         """Exception for a field that is supposed to be renamed, but is not present."""
 
     def __init__(self, *, strict: bool = False, **kwargs: str) -> None:
-        """Store the list of names to rename and pre/post fixs."""
+        """Store the list of names to rename and pre/post fixes."""
         self.targets = kwargs
         self.strict = strict
 
@@ -104,7 +104,7 @@ class NameAdjusterPlugin(BasePlugin):
     """Plugin that prevents name collisions with splunk field names."""
 
     def __init__(self, names: list[str], prefix: str = "", postfix: str = "") -> None:
-        """Store the list of names to rename and pre/post fixs."""
+        """Store the list of names to rename and pre/post fixes."""
         self.names = names
         self.prefix = prefix
         self.postfix = postfix

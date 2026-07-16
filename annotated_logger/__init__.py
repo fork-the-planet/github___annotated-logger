@@ -644,7 +644,7 @@ class AnnotatedLogger:
         *,
         success_info: bool = True,  # pragma: no mutate
         pre_call: PreCall[S2, P2] = None,
-        post_call: PostCall[S2, P2] = None,
+        post_call: PostCall[S2, P3] = None,
         _typing_self: Literal[False],
         _typing_requested: Literal[True],
         provided: Literal[True],
